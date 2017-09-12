@@ -1,0 +1,14 @@
+.vertical-button {
+    font-size: 20px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    height: auto;
+    padding-left: 2px;
+    padding-right: 2px;
+    top: 100px;
+}
+
+.inline {
+    position: absolute;
+    z-index: 100;
+}

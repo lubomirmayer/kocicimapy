@@ -1,0 +1,62 @@
+
+    {block content}
+    
+        <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+        <!-- Overlay -->
+        <div class="overlay"></div>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item slides active">
+            <div class="slide-1"></div>
+            <div class="hero">
+              <hgroup>
+                  <h1>Kočičí mapa</h1>        
+                  <h3>Pomozte nám starat se o opuštěné kočky</h3>
+              </hgroup>
+              <button class="btn btn-hero btn-lg" role="button">Našel jsem kočku</button>
+            </div>
+          </div>
+          
+        </div> 
+      </div>
+    
+      <div id="addNewCatArea">
+        <div class="alert alert-danger">Pro dokončení akce je nutné kliknutím vybrat místo na mapě</div>  
+        {control addNewCatForm}
+      </div>  
+
+        <div id="map"></div>
+        
+    {/block}
+
+
+{block scripts}
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://files.nette.org/sandbox/jush.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="{$basePath}/js/nette.ajax.js"></script>
+    <script type="text/javascript" src="{$basePath}/js/ajaxify.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="{$basePath}/js/googleMarkerClusterer.js"></script>
+    <link rel="stylesheet" type="text/css" href="{$basePath}/css/addMarker.css" />
+    <link rel="stylesheet" type="text/css" href="{$basePath}/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="{$basePath}/css/catForm.css" />
+    <link rel="stylesheet" type="text/css" href="{$basePath}/css/netteExtensions.css" />
+    <!--<script type="text/javascript" src="{$basePath}/js/mainScript.js"></script>-->
+    <script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
+    <script type="text/javascript" src="{$basePath}/js/mainCatMaps.js"></script>
+    <script type="text/javascript" src="{$basePath}/js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAq_FnSD00VYTGX5ls-Tua4r8bt5ItYs9k&callback=initialize"></script>
+{/block}
+
+
+{block head}
+    <meta charset="utf-8">
+    <title>Cat Maps</title>
+    
+        
+        
+        
+{/block}

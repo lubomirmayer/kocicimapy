@@ -1,0 +1,10 @@
+#addNewCatArea{
+    height: 100%;
+    float: left;
+    padding: 10px;
+    display: none;
+}
+
+#addNewCatArea .alert {
+    width: 300px;
+}    
